@@ -1,4 +1,4 @@
-# UsuariosApp
+# Sistema Inventario Web en Springboot y Angular - Gestión de Usuarios
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
