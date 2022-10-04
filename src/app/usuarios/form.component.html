@@ -1,0 +1,35 @@
+    <form>
+      <h3>{{titulo}}</h3>
+        <label><strong>Id: </strong><input type="text" id="id" class="id" placeholder="Ingrese su Id..." name="id" [(ngModel)]="usuario.id" [(ngModel)]="usuario.user_id" [disabled]='disableid' autocomplete="off" #id_usuario></label>
+        <p></p>
+        <label><strong>Nombre: </strong><input
+          type="text" id="nombre"
+          placeholder="Ingrese su Nombre..."
+          class="nombre" name="nombre" [(ngModel)]="usuario.nombre"
+          maxlength="100" autocomplete="off"
+          required
+          #nombre></label>
+        <p></p>
+        <label><strong>Clave: </strong><input type="password" id="clave"
+          placeholder="Ingrese Clave a crear..." name="clave" class="clave"
+          [(ngModel)]="usuario.clave" size="30" maxlength="200"
+          [type]="cambiotipoclave"
+          autocomplete="off"
+          required
+          #clave></label>
+          <button id="verclave" class="material-icons" (click)="veclave()" *ngIf="cambiotipoclave=='password'">visibility</button>
+          <button id="noverclave" class="material-icons" (click)="veclave()" *ngIf="cambiotipoclave=='text'">visibility_off</button>
+        <p></p>
+        <label><strong>Rol: </strong>
+          <select class="rol" name="authority" [(ngModel)]="usuario.authority">
+              <option value="0" selected disabled>Seleccione un Rol...</option>
+              <option value="ROLE_ADMIN">Administrador (Master)</option>
+              <option value="ROLE_USER">Usuario</option>
+          </select>
+        </label>
+        <p></p>
+        <button id="boton_crear" class="material-icons" role="button" (click)="crearUsuario()">person_add&nbsp;&nbsp;<label class="label_ingresar">INGRESAR</label></button>
+        <br>
+        <br>
+        <p></p>
+    </form>

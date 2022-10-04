@@ -1,0 +1,194 @@
+form{
+  margin-left: 7%;
+  height: 40%;
+}
+
+.id{
+  font-family:"SFProText-Medium";
+  border:none;
+  font-size: 1.1vw;
+  background-color: white;
+  border-radius: 10px;
+  width:15%;
+  text-align: center;
+  height: 20px;
+}
+.nombre{
+  font-family:"SFProText-Medium";
+  border:none;
+  font-size: 1.1vw;
+  outline: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  width:50%;
+  text-align: center;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.nombre:focus{
+  background-color: white;
+  box-shadow: 0 0 2px 3px #3B99FC ;
+  outline:0px;
+}
+.clave{
+  font-family:"SFProText-Medium";
+  border:none;
+  font-size: 1.1vw;
+  outline: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  width:50%;
+  text-align: center;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.clave:focus{
+  background-color: white;
+  box-shadow: 0 0 2px 3px #3B99FC ;
+  outline:0px;
+}
+
+.rol{
+  font-family: "SFProText-Medium";
+  height: 27px;
+  width: 50%;
+  font-size: 1.1vw;
+  border-radius: 10px;
+  border: 2px solid #F0F0F0;
+  background-image: linear-gradient(#F0F0F0,  #F0F0F0);
+  /*background-color: rgba(227, 227, 227, 0.9);   efecto en boton */
+  color: black;
+  cursor:pointer;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10), 0 0px 1px 0px rgba(0,0,0,0.255);
+  outline:0px;
+  transition: all 0.1s ease;
+}
+
+.rol:active{
+  box-shadow: 0 0 2px 3px #3B99FC ;
+  background-image: linear-gradient(white, white);
+  border: 2px;
+  outline:0px;
+}
+.rol:focus{
+  box-shadow: 0 0 2px 3px #3B99FC ;
+  background-image: linear-gradient(white, white);
+  border: 2px;
+  outline:0px;
+}
+
+.rol option{
+  color: black;
+}
+
+.rol{
+  cursor:pointer;
+}
+#boton_crear{
+  border-radius: 25px;
+  background-color: #198754;
+  color:white;
+  border:none;
+  margin-top:-5px;
+  font-size:1vw;
+  font-weight: bold;
+  position:absolute;
+  width:9%;
+  height:5.5%;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px 3px rgba(25, 135, 84, 0.2);
+  transition: all 0.3s ease;
+}
+
+#boton_crear:hover{
+  background-color: #18b46b;
+  animation: wiggle 0.3s;
+}
+#boton_volver{
+  background-color: #0d6efd;
+  border-radius: 25px;
+  color:white;
+  border:none;
+  margin-top:-5px;
+  margin-left: 11%;
+  font-size:1vw;
+  font-weight: bold;
+  position:absolute;
+  width:9%;
+  height:5.5%;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px 3px rgba(13, 110, 253, 0.2);
+  transition: all 0.3s ease;
+}
+
+#boton_volver:hover{
+  background-color: #3a89ff;
+  animation: wiggle 0.3s;
+}
+
+@keyframes wiggle {
+  25%{
+    transform: scale(1,1.1);
+  }
+  50%{
+    transform: scale(1.1,1);
+  }
+  75%{
+    transform: scale(1,1.1);
+  }
+}
+.label_ingresar{
+  font-family:"SFProText-Regular";
+  cursor:pointer;
+}
+
+#verclave {
+	background-color: #4b5fb8;
+	border-radius: 70px;
+	height: 30px;
+  border: none;
+  color :white;
+	width: 35px;
+  cursor: pointer;
+	box-shadow: 0 0 0 0 rgba(75, 95, 184, 1);
+}
+#verclave:active {
+	box-shadow: 0 0 0 0 rgba(75, 95, 184, 1);
+	transform: scale(1);
+	animation: pulse 0.2s infinite;
+}
+
+#noverclave {
+	background-color: #4b5fb8;
+	border-radius: 50px;
+	height: 30px;
+  border: none;
+  color :white;
+	width: 35px;
+  cursor: pointer;
+	box-shadow: 0 0 0 0 rgba(75, 95, 184, 1);
+}
+#noverclave:active {
+	box-shadow: 0 0 0 0 rgba(75, 95, 184, 1);
+	transform: scale(1);
+	animation: pulse 0.2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(75, 95, 184, 0.7)
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}

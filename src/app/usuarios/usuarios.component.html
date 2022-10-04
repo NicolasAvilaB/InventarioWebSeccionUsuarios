@@ -1,0 +1,40 @@
+<div class="encabezadotabla">
+  <span class="tituloencabezado">{{ title }}</span>
+  <button id="boton_crearusuario" class="material-icons" [routerLink]="['/usuarios','crearusuario']" (click)="ver()">add&nbsp;<label class="label_creausu">CREAR USUARIO</label></button>
+  <p></p>
+</div>
+<div class="contenedor_tabla">
+  <table class="tabla_usuarios" *ngIf="usuarios!.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Clave</th>
+        <th>Roles</th>
+        <th>Modificar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{usuario.id}}</td>
+        <td>{{usuario.nombre}}</td>
+        <td>&nbsp;*******************&nbsp;</td>
+        <td>{{usuario.authority}}</td>
+        <td><button id="modificar" name="modificar" class="material-icons" [routerLink]="['/usuarios/modificar_usuario',usuario.id]" (click)="ver()">edit_document</button></td>
+        <td><button name="eliminar" class="material-icons" (click)='delete(usuario)'>delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="label_UPS" *ngIf="usuarios!.length === 0">UPS!, Revise la base de datos y no hay usuarios registrados, ni master ni esclavos</div>
+</div>
+<br *ngIf="usuarios!.length === 0">
+<div class="registro" *ngIf="visible">
+  <aside class="encabezado_registro">
+    <button id="registroclose" class="material-icons" [routerLink]="['/']" (click)="ver()">close</button>
+  </aside>
+  <div class="registro-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

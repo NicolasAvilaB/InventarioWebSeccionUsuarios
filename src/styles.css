@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+@font-face {
+  font-family: 'SFProText-Regular';
+  src: url('assets/fonts/SFProText-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SFProText-Medium';
+  src: url('assets/fonts/SFProText-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SFProText-Light';
+  src: url('assets/fonts/SFProText-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+body{
+  margin:0;
+  background-color:#f5f8fb;
+
+}

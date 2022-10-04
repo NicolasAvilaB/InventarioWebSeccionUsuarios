@@ -1,0 +1,24 @@
+.contenedor-usuarios{
+  font-family: 'SFProText-Regular';
+  background-color: white;
+  border-radius:20px;
+  height: 55%;
+  position: absolute;
+  /*background-attachment: fixed;
+	display: flex;
+	flex: wrap;
+
+
+  justify-content: center;*/
+  display: flex;
+  flex: wrap;
+  box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sobrecontenedor{
+  background-attachment: fixed;
+	display: flex;
+	flex: wrap;
+	margin-top:2em;
+  justify-content: center;
+}

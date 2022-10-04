@@ -1,0 +1,51 @@
+.logo{
+  margin-left:2%;
+  width:6%;
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+.encabezado{
+  background: linear-gradient(125deg, #1f295a 200px ,#4b5fb8, #6176d6);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  margin-left:3%;
+  border-radius: 0 0 0 50px;
+}
+.links{
+  font-family: "SFProText-Regular";
+  font-size: 1.2vw;
+  background:#5be3f3;
+  color:#20295a;
+  float: right;
+  margin-top: -20px;
+  border-radius: 25px;
+  padding: 15px;
+  margin-right: 18%;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.links:hover{
+  background: #F7BE16;
+  transform: scale(1.15);
+  color:white;
+  transition-duration: 0.2s;
+}
+.contenido{
+  background-attachment: fixed;
+	display: flex;
+	flex: wrap;
+  align-items: center;
+  justify-content: left;
+}
+.titulo{
+  font-family:"SFProText-Regular";
+  margin-left: 10px;
+  font-size: 1.3vw;
+  color:white;
+}
+
+.subtitulo{
+  color:#ffb300
+}
+
