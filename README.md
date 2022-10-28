@@ -9,7 +9,7 @@ Angular (Frontend) permite:
 
 ## Proyecto de Springboot
 
-EL nombre del proyecto es backend-apirest-seccion-usuarios, encargado del area backend al cual Angular se comunica con el proyecto mediante microservices
+EL nombre del proyecto es backend-apirest-seccion-usuarios, encargado del area backend al cual Angular se comunica con el proyecto consumiendo microservices API REST.
 
 ## Development server
 
