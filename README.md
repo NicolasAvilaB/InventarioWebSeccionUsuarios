@@ -9,7 +9,10 @@ Angular (Frontend) permite:
 
 ## Proyecto de Springboot
 
-EL nombre del proyecto es backend-apirest-seccion-usuarios, encargado del area backend al cual Angular se comunica con el proyecto consumiendo microservices API REST.
+EL nombre del proyecto es backend-apirest-seccion-usuarios, 
+encargado del area backend al cual Angular se comunica con el proyecto consumiendo microservices API REST.
+
+- Para la comunicacion de Angular al Proyecto Springboot, se usa el puerto 8087.
 
 ## Development server
 
